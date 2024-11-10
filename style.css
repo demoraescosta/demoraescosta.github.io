@@ -1,0 +1,292 @@
+
+:root {
+    --texto: #0c0c0c;
+    --link: #5c5c5c;
+    --fundo: #f8f8f8;
+    --border: #cccccc;
+
+    --texto-noturno: #f8f8f8;
+    --fundo-noturno: #0c0c0c;
+    --link-noturno: #cfcfcf;
+    --border-noturno: #2b2b2b;
+}
+
+header
+{
+    text-align: center;
+    font-weight: normal;
+    padding-bottom: 0;
+
+    border-bottom: solid;
+    border-color: var(--border);
+}
+
+body {
+    margin-left: auto;
+    margin-right: auto;
+
+    max-width: 100em;
+    background-color: var(--fundo);
+    color: var(--texto);
+
+
+}
+
+footer
+{
+    text-align: center;
+    font-weight: normal;
+    padding-bottom: 0;
+
+    border-top: solid;
+    border-color: var(--border);
+}
+
+
+p
+{
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+h1 
+{
+    text-align: center;
+    text-decoration: solid;
+}
+
+h2,
+h3 
+{
+    text-align: center;
+    font-weight: normal;
+}
+
+h4 
+{
+    margin-top: 0;
+    font-style: italic;
+    font-weight: normal;
+}
+
+h5 
+{
+    padding-top: 0;
+    text-align: center;
+    font-weight: normal;
+}
+
+
+a
+{
+    color: var(--link);
+    text-decoration: none;
+    font-weight: light;
+
+    margin-right: 10px;
+    margin-left: 10px;
+
+    overflow-wrap: break-word;
+}
+
+a:hover
+{
+    color: var(--texto);
+}
+
+.btn_invisivel 
+{
+    background: transparent;
+    border: none;
+
+    color: var(--link);
+    text-decoration: none;
+
+    margin-right: 10px;
+    margin-left: 10px;
+
+    font-size: 16px;
+
+    overflow-wrap: break-word;
+}
+
+btn_invisivel:hover {
+    color: var(--texto);
+}
+
+.corpo 
+{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 55%;
+    padding: 10px;
+
+    font-size: 20;
+    img 
+    {
+        display: block;
+
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 2em;
+    
+        border-radius: 6px;
+    
+        max-width: 90%;
+        max-height: 40%;
+
+    }
+}
+
+.destaques
+{
+    display: grid;
+    grid-template-columns: 35% 65%;
+    grid-template-areas: 
+        "esquerda-cima  central central"
+        "esquerda-meio  central central"
+        "esquerda-baixo central central";
+
+    /* max-height: auto; */
+
+    a
+    {
+        margin: 0px;
+        padding: 0px;
+        text-decoration: none;
+    }
+}
+
+.destaques .card-vertical-destaque 
+{
+    background: var(--fundo);
+    
+    padding: 26px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+
+    height: 1em;
+
+    border-radius: 0;
+    text-decoration: none;
+
+    transition: border 0.3s ease;
+
+    h2 {
+        text-align: left;
+        font-weight: bold;
+    }
+
+    h3 {
+        text-align: left;
+    }
+}
+
+.card-vertical-destaque-central {
+    grid-area: central;
+    width: auto;
+
+    border: 2px solid transparent;
+    margin-right: 1.6em;
+
+    img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .titulo-destaque
+    {
+
+        text-shadow: 2px 2px #0c0c0c;
+        width: 20%;
+        margin-left: 1.5em;
+        max-height: fit-content;
+        position: absolute;
+        h1
+        {
+            color: var(--texto-noturno);
+            text-align: left;
+            margin-bottom: 6px;
+
+        }
+        h2
+        {
+            text-align: left;
+            color: var(--texto-noturno);
+        }
+    }
+}
+
+.card-vertical-destaque-central:hover {
+    border: 2px solid var(--texto);
+}
+
+
+.card-vertical-destaque .titulo-destaque
+{
+    display:flex;
+    height: auto;
+    width: auto;
+
+    max-height: 1em;
+
+    h1 {
+        text-align: left;
+        font-weight: bold;
+    }
+
+}
+
+.lista-card-horizontal
+{
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    max-width: 1250px;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    padding: 25px;
+    gap: 10px;
+}
+
+.lista-card-horizontal .card-vertical
+{
+    background: var(--fundo);
+    padding: 26px;
+    border-radius: 0;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    text-decoration: none;
+    border: 2px solid transparent;
+    transition: border 0.3s ease;
+
+    h3
+    {
+        text-align: left;
+        font-weight: bold;
+    }
+
+}
+
+
+.lista-card-horizontal .card-vertical h5
+{
+    text-align: center;
+}
+
+.lista-card-horizontal .card-vertical img {
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+}
+
+.lista-card-horizontal .card-vertical:hover {
+    border: 2px solid var(--texto);
+    size-adjust: 110%;
+}
