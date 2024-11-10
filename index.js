@@ -90,23 +90,24 @@ const manchetes =
     Cultura: 
     [ 
         [
-            "West Ham sinaliza com oferta de R$ 225 milhões pelo atacante Igor Jesus, do Botafogo",
-            "Jogador é procurado por time da Premier League"
+            "RESENHA: Ainda Estou Aqui é drama universal com Fernanda Torres brilhante",
+            "Novo filme de Walter Salles tem técnica impecável e história emocionante"
         ],
 
         [
-            "Bola de Ouro 2024: Rodri é eleito o melhor jogador do mundo, e Vini Jr. é segundo",
-            "Meio-campista do Manchester City quebra jejum de 64 anos da Espanha e desbanca atacante brasileiro do Real Madrid, apontado como favorito e ausente na cerimônia"
+            "Milton Nascimento disputa o Grammy 2025, já com status de divindade, por álbum de jazz com Esperanza Spalding",
+            "Longe de ser improvável, a vitória seria merecida para coroar a trajetória transcendental do artista"
         ],
 
         [
-            "Bola de Ouro 2024: Rodri é eleito o melhor jogador do mundo, e Vini Jr. é segundo",
-            "Meio-campista do Manchester City quebra jejum de 64 anos da Espanha e desbanca atacante brasileiro do Real Madrid, apontado como favorito e ausente na cerimônia"
+            "ENTREVISTA: Francis Ford Coppola fala sobre 'Megalópolis', falta de riscos em Hollywood e futuro do cinema",
+            "'Hollywood quer apenas fazer dinheiro para pagar dívidas', diz diretor lendário de clássicos como 'O poderoso chefão' e 'Apocalypse now'. Leia entrevista"
         ],
 
         [
-            "Atleta Bruno Henrique é alvo de operação policial após indicios de manipulação de resultados (Xiiiii)",
-            "KKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK"
+            "“Ainda Estou Aqui” estreia no Brasil com esperanças de indicação ao Oscar e aclamação internacional",
+            "Filme é estrelado por Fernanda Torres, Selton Mello e conta com participação de Fernanda Montenegro",
+            "imagens/ainda estou aqui.jpeg"
         ]
     ],
 }
@@ -124,6 +125,8 @@ let subtitulo2 = document.getElementById("subtitulo2")
 let subtitulo3 = document.getElementById("subtitulo3")
 
 let subtitulo4 = document.getElementById("subtitulo4");
+
+let imagem_destaque = document.getElementById("imagem-destaque")
 
 let cat_atual = categorias.Esportes;
 
@@ -143,6 +146,8 @@ function atualizarManchetes()
             subtitulo3.innerText = manchetes.Esportes[2][1];
 
             subtitulo4.innerText = manchetes.Esportes[3][1];
+
+            imagem_destaque.src = manchetes.Esportes[3][2];
             break;
 
         case categorias.Politica:
@@ -158,7 +163,7 @@ function atualizarManchetes()
             
             subtitulo4.innerText = manchetes.Politica[3][1];
 
-            document.getElementById("imagem-destaque").src = manchetes.Politica[3][2];
+            imagem_destaque.src = manchetes.Politica[3][2];
             break;
 
         case categorias.Cultura:
@@ -174,7 +179,7 @@ function atualizarManchetes()
             
             subtitulo4.innerText = manchetes.Cultura[3][1];
 
-            titulo4.src = String(manchetes.Cultura[3][2]);
+            imagem_destaque.src = manchetes.Cultura[3][2];
             break;
         default:
             break;
