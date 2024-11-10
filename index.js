@@ -67,18 +67,18 @@ const manchetes =
     [ 
 
         [
-            "Bola de Ouro 2024: Rodri é eleito o melhor jogador do mundo, e Vini Jr. é segundo",
-            "Meio-campista do Manchester City quebra jejum de 64 anos da Espanha e desbanca atacante brasileiro do Real Madrid, apontado como favorito e ausente na cerimônia"
+            "Fim da escala 6x1: Entenda como funciona o modelo atual e o que PEC pode mudar",
+            "Encabeçada pela deputada federal Erika Hilton (Psol), proposta ainda não tem assinaturas suficientes para começar a tramitar"
         ],
 
         [
-            "Atleta Bruno Henrique é alvo de operação policial após indicios de manipulação de resultados (Xiiiii)",
-            "KKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK"
+            "Fim da escala 6-1 mobiliza debate nas redes; defensores criticam omissões na esquerda",
+            "Deputada tenta coletar número mínimo de 171 assinaturas dos colegas para que PEC comece a tramitar na Câmara"
         ],
 
         [
-            "Atleta Bruno Henrique é alvo de operação policial após indicios de manipulação de resultados (Xiiiii)",
-            "KKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK"
+            "“Já passou da hora”, diz vice-líder do governo, sobre fim da escala 6X1 ",
+            "O Brasil tem de adotar um modelo de 4x3 ou 5x2 sem redução de salário, defendeu Reginaldo Lopes, do PT de Minas Gerais"
         ],
 
         [
